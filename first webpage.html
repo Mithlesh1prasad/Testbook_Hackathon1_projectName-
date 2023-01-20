@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="first webpage.css">
+    <style>
+        body {
+            font-family: 'Mukta', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            color: aliceblue;
+            background: url(720499.jpg);
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 33px;
+            top: 20px;
+        }
+
+        img {
+            width: 130px;
+            height: 45px;
+            filter: invert(100%);
+        }
+
+        .centre {
+            display: block;
+            width: 500px;
+            margin: 20px auto;
+            border: 2px solid rgb(114, 180, 255);
+            border-radius: 15px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 22px 20px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: rgb(114, 180, 255);
+
+        }
+
+        .right {
+            position: absolute;
+            right: 33px;
+            top: 25px;
+
+        }
+
+        .btn {
+            display: inline;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid;
+            position: relative;
+            cursor: pointer;
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #fefeff00;
+            border-radius: 10px;
+            min-width: 100px;
+            color: rgb(255, 255, 255);
+            z-index: 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 0;
+            margin-right: 10px;
+            border-color: rgb(114, 180, 255);
+            ;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: -50px;
+            font-size: 16px;
+
+            width: 270px;
+            height: 100%;
+            background: rgb(114, 180, 255);
+            color: rgb(255, 255, 255);
+            transition: all 0.7s ease-in-out;
+            z-index: -1;
+            transform: translateX(-300px) skew(-20deg);
+        }
+
+        .btn:hover::before {
+            transform: translateX(0px) skew(-20deg);
+        }
+
+        .frst {
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: -16px;
+            margin-left: 20px;
+        }
+
+        .form {
+            border: 2px solid rgb(114, 180, 255);
+            margin: 55px 140px;
+            padding: 20px 25px;
+            width: 35%;
+            border-radius: 5px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            padding: 2px;
+            display: block;
+            width: 400px;
+            margin: 3px auto;
+            border: 2px solid rgb(114, 180, 255);
+          
+            border-radius: 8px;
+            font-size: 15px;
+            color:  white;
+        }
+
+        .form h1 {
+            text-align: center;
+        }
+
+        .form button {
+            display: block;
+            width: 88%;
+            padding: 10px;
+            margin: 20px auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="vecteezy_mountain_1206222.png" alt="">
+            <div class="frst">Laniakea</div>
+        </div>
+
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">Blog </a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn"> Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+    <div class="form">
+        <h1>join the best gym of bhilai now</h1>
+        <form action="notaction,php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+
+                <input type="text" name="" placeholder="Enter Your Age">
+
+                <input type="text" name="" placeholder="Enter Your Gender">
+
+                <input type="text" name="" placeholder="Enter Your Locality">
+
+                <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
